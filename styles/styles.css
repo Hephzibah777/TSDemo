@@ -1,0 +1,198 @@
+.field{
+    display: flex;
+    justify-content: center;
+    
+}
+.fieldClass{
+    margin-left: 2rem;
+   padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+table, th, td {
+    
+    border: 2px solid black;
+    font-size: large;
+    color: rgb(22, 21, 21);
+  }
+
+.tablediv{
+
+    width:50%;
+    height:100%;
+}
+.table{
+    margin:5rem;
+    
+}
+th{
+    padding:1.5rem;
+    color:white;
+}
+td{
+    text-align: center;
+    height:80px;
+    vertical-align: center;
+    padding:1rem;
+}
+
+
+.fieldClass label{
+    font-size: 1.5rem;
+    font-weight:bolder;
+
+}
+.fieldClass input{
+    display: flex;
+    width: 50%;
+    padding: 0.8rem;
+}
+
+button{
+    padding:10px 20px;
+    background-color: black;
+    color: white;
+    margin:1px;
+    cursor: pointer;
+}
+
+.error-field{
+    display: flex;
+   justify-content: right;
+   padding-bottom: 0.5rem;
+   color: red;
+}
+
+#toastBox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 8px;
+}
+.toast{
+    width: 280px;
+    height:70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.toast text{
+    padding: 10rem;
+}
+.toast i{
+    margin: 0 20px;
+    color: green;
+}
+
+.toast.invalid i{
+    color: orange;
+}
+
+.toast::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anime 5s linear forwards;
+}
+
+.toast.invalid::after{
+    background-color: orange;
+}
+
+@keyframes anime {
+    100%{
+        width: 0;
+    }
+}
+
+#submit-button{
+    cursor: pointer;
+}
+
+.modal{
+    z-index:3;
+    background-color: rgb(12, 12, 12);
+    border-radius: 5rem;
+    color:white;
+    margin:4rem;
+    width:50%;
+    height:70%;
+    margin-left:25rem;
+    padding:4rem;
+    overflow-y:scroll;
+}
+.modal-container{
+    
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    animation-direction: alternate-reverse;
+    overflow-y:scroll;
+}
+.modal-container table{
+    color:#fff;
+    border-color: #fff;
+}
+.modal-container td{
+    color:#fff;
+    border-color: #fff;
+}
+.button-div{
+    z-index: 2;
+    display: flex;
+    justify-content: right;
+    padding-right: 44rem;
+
+}
+
+
+.datatimediv{
+    padding:2rem;
+    display: flex;
+    border: 2px solid;
+    margin-bottom: 1rem;
+}
+.datatimediv div{
+    padding:1rem;
+}
+
+.headerdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    color: #f1e7e7;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .historybutton{
+  position: fixed;
+  top:2rem;
+  }
+
+  .restorebutton{
+    background-color: #fff;
+    color:black;
+    margin-bottom: 1rem;
+  }
